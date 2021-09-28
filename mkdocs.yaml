@@ -1,0 +1,46 @@
+site_name: INFN CMS Analysis Facility
+theme:
+  name: material
+  palette:
+    primary: "Deep Blue"
+    accent: "Light Blue"
+nav:
+  - Home: "README.md"
+  - Introduction: "intro/intro.md"
+  - Quick Start: 
+    - Requirements: "get-started/get-started.md"
+    - Configuration:
+      - Setup oidc-agent
+      - Setup DODAS client
+    - Deployment:
+      - Using INFN facility
+      - Standalone setup
+  - Deployment guide:
+    - HTCondor Cluster:
+      - Deployment guides:
+        - from scratch: "deployment/deployment.md"
+        - on existing K8s cluster
+    - User tutorials: "tutorials/tutorials.md"
+  - Developer guide:
+    - Requirements: "dev/dev.md"
+  #- From Helm to DODAS template: "from-helm2tosca.md"
+repo_name: "comp-dev-cms-ita/AnalysisFacility"
+repo_url: "https://github.com/comp-dev-cms-ita/AnalysisFacility.git"
+
+extra:
+  social:
+    - icon: fontawesome/brands/github-alt
+      link: 'https://github.com/comp-dev-cms-ita'
+
+markdown_extensions:
+  - codehilite
+  - pymdownx.arithmatex
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+  - pymdownx.critic
+  - pymdownx.details
+  - pymdownx.inlinehilite
+  - pymdownx.superfences
+  - pymdownx.tasklist:
+      custom_checkbox: true
