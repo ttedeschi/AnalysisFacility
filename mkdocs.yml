@@ -1,9 +1,14 @@
 site_name: INFN CMS Analysis Facility
 theme:
-  name: material
+  name: material 
   palette:
     primary: "Deep Blue"
     accent: "Light Blue"
+  logo: logo.jpeg
+  features:
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.top
 nav:
   - Home: "README.md"
   - Introduction: "intro/intro.md"
