@@ -14,6 +14,10 @@
  limitations under the License.
 -->
 
+## Github issue table 
+
+Table of open issues: [https://github.com/orgs/comp-dev-cms-ita/projects/1](https://github.com/orgs/comp-dev-cms-ita/projects/1?fullscreen=true)
+
 ## Condor
 
 Master k8s: root@131.154.96.124
