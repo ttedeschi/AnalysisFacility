@@ -13,10 +13,10 @@ nav:
   - Home: "README.md"
   - Introduction: "intro/intro.md"
   - How it works:
-    - Components
-    - Network
-    - Data access
-    - Security
+    - Components: "WIP.md"
+    - Network: "WIP.md"
+    - Data access: "WIP.md"
+    - Security: "WIP.md"
   - Quick Start: 
     - For users: "tutorials/tutorials.md"
     # - For admins:
