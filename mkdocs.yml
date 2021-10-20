@@ -27,8 +27,7 @@ nav:
     #       - Setup DODAS client
     #     - Using INFN facility
     #     - Standalone setup
-  - Developer guide:
-    - Requirements: "dev/dev.md"
+  - Developer guide: "dev/dev.md"
   #- From Helm to DODAS template: "from-helm2tosca.md"
 repo_name: "comp-dev-cms-ita/AnalysisFacility"
 repo_url: "https://github.com/comp-dev-cms-ita/AnalysisFacility.git"
