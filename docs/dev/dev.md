@@ -18,6 +18,12 @@
 
 Table of open issues: [https://github.com/orgs/comp-dev-cms-ita/projects/1](https://github.com/orgs/comp-dev-cms-ita/projects/1?fullscreen=true)
 
+## Proxy server
+
+> TODO: create a repo for xrootd docker compose with doc: https://github.com/comp-dev-cms-ita/compose-xrootd
+
+At the moment the demo server proxy is: `root://131.154.97.130.myip.cloud.infn.it:30443/`
+
 ## Condor
 
 Master k8s: root@131.154.96.124
