@@ -13,13 +13,4 @@
  See the License for the specific language governing permissions and
  limitations under the License.
 -->
-# THIS PAGE IS UNDER CONSTRUCTION
 
-<!--
-What's that?
-
-Objectives
-
-
-Video Demo
--->

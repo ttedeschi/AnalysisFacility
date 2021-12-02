@@ -14,8 +14,3 @@
  limitations under the License.
 -->
 
-Techs
-
-Arch
-
-Refs
