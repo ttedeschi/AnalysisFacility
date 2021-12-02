@@ -10,25 +10,27 @@ theme:
     - navigation.tabs.sticky
     - navigation.top
 nav:
-  - Home: "README.md"
-  - Introduction: "intro/intro.md"
+  - Home: "WIP.md"
+  - Introduction: "WIP.md"
   - How it works:
     - Components: "WIP.md"
     - Network: "WIP.md"
     - Data access: "WIP.md"
     - Security: "WIP.md"
   - Quick Start: 
-    - For users: "tutorials/tutorials.md"
-    # - For admins:
-    #   - Requirements: "get-started/get-started.md"
-    #   - Deployment:
-    #     - Preparation:
-    #       - Setup oidc-agent
-    #       - Setup DODAS client
-    #     - Using INFN facility
-    #     - Standalone setup
-  - Developer guide: "dev/dev.md"
-  #- From Helm to DODAS template: "from-helm2tosca.md"
+    - For users: 
+      - Using Dask: 
+        - Initialization and management: "tutorials/dask_init.md"
+        - Interactive analysis: "tutorials/dask_interactive.md"
+        - Python scripting: "tutorials/dask_scripting.md"
+      - Using HTCondor:
+        - Setting up the environment: "tutorials/htc_init.md"
+        - Submit your first job: "tutorials/htc_job.md"
+  - DevOps guide: 
+    - General info: "dev/dev.md"
+    - Adding new users:
+      - IAM: "dev/iam.md"
+      - HTCondor: "dev/htc.md"
 repo_name: "comp-dev-cms-ita/AnalysisFacility"
 repo_url: "https://github.com/comp-dev-cms-ita/AnalysisFacility.git"
 
