@@ -1,6 +1,6 @@
 site_name: INFN CMS Analysis Facility
 theme:
-  name: material 
+  name: material
   palette:
     primary: "Deep Blue"
     accent: "Light Blue"
@@ -13,31 +13,32 @@ nav:
   - Home: "WIP.md"
   - Introduction: "WIP.md"
   - How it works:
-    - Components: "WIP.md"
-    - Network: "WIP.md"
-    - Data access: "WIP.md"
-    - Security: "WIP.md"
-  - Quick Start: 
-    - For users: 
-      - Using Dask: 
-        - Initialization and management: "tutorials/dask_init.md"
-        - Interactive analysis: "tutorials/dask_interactive.md"
-        - Python scripting: "tutorials/dask_scripting.md"
-      - Using HTCondor:
-        - Setting up the environment: "tutorials/htc_init.md"
-        - Submit your first job: "tutorials/htc_job.md"
-  - DevOps guide: 
-    - General info: "dev/dev.md"
-    - Adding new users:
-      - IAM: "dev/iam.md"
-      - HTCondor: "dev/htc.md"
+      - Components: "WIP.md"
+      - Network: "WIP.md"
+      - Data access: "WIP.md"
+      - Security: "WIP.md"
+  - Quick Start:
+      - For users:
+          - Using Dask:
+              - Initialization: "tutorials/dask_init.md"
+              - Cluster management: "tutorials/dask_management.md"
+              - Interactive analysis: "tutorials/dask_interactive.md"
+              - Python scripting: "tutorials/dask_scripting.md"
+          - Using HTCondor:
+              - Setting up the environment: "tutorials/htc_init.md"
+              - Submit your first job: "tutorials/htc_job.md"
+  - DevOps guide:
+      - General info: "dev/dev.md"
+      - Adding new users:
+          - IAM: "dev/iam.md"
+          - HTCondor: "dev/htc.md"
 repo_name: "comp-dev-cms-ita/AnalysisFacility"
 repo_url: "https://github.com/comp-dev-cms-ita/AnalysisFacility.git"
 
 extra:
   social:
     - icon: fontawesome/brands/github-alt
-      link: 'https://github.com/comp-dev-cms-ita'
+      link: "https://github.com/comp-dev-cms-ita"
 
 markdown_extensions:
   - codehilite
