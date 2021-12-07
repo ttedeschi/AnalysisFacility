@@ -23,7 +23,7 @@ nav:
               - Initialization: "tutorials/dask_init.md"
               - Cluster management: "tutorials/dask_management.md"
               - Interactive analysis: "tutorials/dask_interactive.md"
-              - Python scripting: "tutorials/dask_scripting.md"
+              - Python script: "tutorials/dask_scripting.md"
           - Using HTCondor:
               - Setting up the environment: "tutorials/htc_init.md"
               - Submit your first job: "tutorials/htc_job.md"

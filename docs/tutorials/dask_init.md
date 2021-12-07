@@ -14,7 +14,7 @@
  limitations under the License.
 -->
 
-# Hot to start
+# How to start
 
 ## Create a cluster
 
@@ -41,9 +41,16 @@ the dashboard (blue square).
 
 ![dask cluster created](imgs/dask_init_created.png)
 
-> **NOTE**: in the `Scheduler Address` field you will see the actual status of the
+> **NOTEs**: in the `Scheduler Address` field you will see the actual status of the
 > cluster creation. The cluster will be ready when there is present a valid
 > cluster address such as `localhost:12345`.
+>
+> **NOTE**: it is not necessary to click on `Dashboard URL`, because the link
+> is not directly available outside the Dask Lab Extension. To select a cluster,
+> you just have to move the cursor in the item and click when the cursor become a
+> hand.
+
+## Connect to the cluster
 
 ## Connect to the cluster
 
