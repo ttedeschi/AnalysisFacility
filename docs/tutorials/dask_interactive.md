@@ -18,26 +18,37 @@ Dask can be used as a backend for the distributed execution of ROOT's [RDataFram
 
 ## Set up
 In a notebook, once a Dask client has been deployed and a Dask client instatiated:
-```
+
+```python
 from dask.distributed import Client
+
 client = Client(<Dask scheduler address)
 ```
 
 you need to declare a distributed DataFrame, passing all the necessary information
-```
+
+```python
 import ROOT
-df = ROOT.RDF.Experimental.Distributed.Dask.RDataFrame(<name of the tree>, 
-                                                       chain, 
-                                                       npartitions=<maximum number of partitions (i.e. Dask tasks)>, 
-                                                       daskclient=client)
+
+df = ROOT.RDF.Experimental.Distributed.Dask.RDataFrame(
+    <name of the tree>, 
+    chain, 
+    npartitions=<maximum number of partitions (i.e. Dask tasks)>, 
+    daskclient=client,
+)
 ```
+
 In most cases you would like to declare custom functions to the ROOT interpreter in order to perform specific calculations on data. To do this, you need to use the ```ROOT.RDF.Experimental.Distributed.initialize``` function to initialize each worker.
-```
+
+```python
 text_file = open("postselection.h", "r")
 data = text_file.read()
+
 def my_initialization_function():
     ROOT.gInterpreter.Declare('{}'.format(data))
+
 ROOT.RDF.Experimental.Distributed.initialize(my_initialization_function)
 ```
+
 now you are ready to book all the computations you need to do on the dataframe using RDataFrame methods.
 Once all the operations are booked, trigger the distributed execution by doing some actions on booked items, as you would do using RDataFrame locally. Results can be accessed in the same way as local RDataFrame, too.
