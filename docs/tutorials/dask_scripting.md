@@ -55,6 +55,28 @@ cluster.scale(1)
 > cluster.scale(1)
 > sleep(60)
 > ```
+>
+> **NOTE**: it could be possible that the cluster controller is not yet reachable when you
+> try to `scale` your cluster. In this situation you could receive an exception like the following:
+>
+> ```python
+> /usr/local/[...]/dask_remote_jobqueue.py in scale(self, n)
+>     594 
+>     595         if not connected:
+> --> 596             raise Exception("Cluster is not reachable...")
+>     597 
+>     598         logger.debug("[Scheduler][scale][connection OK!]")
+>
+> Exception: Cluster is not reachable...
+> ```
+>
+> To fix this situation, just add a small sleep before the scale too, like follows:
+>
+> ```python
+> sleep(6) # Wait a bit before the scale
+> cluster.scale(1)
+> sleep(60)
+> ```
 
 Then, you can connect to the cluster with the Dask Client as follows:
 

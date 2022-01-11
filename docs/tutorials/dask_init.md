@@ -41,9 +41,12 @@ the dashboard (blue square).
 
 ![dask cluster created](imgs/dask_init_created.png)
 
-> **NOTEs**: in the `Scheduler Address` field you will see the actual status of the
-> cluster creation. The cluster will be ready when there is present a valid
-> cluster address such as `localhost:12345`.
+> **NOTE**: in the `Status` field, you will see the actual state of the
+> cluster creation. The cluster will be ready when the state is `Running`.
+> In that situation, there will be a valid Scheduler address and Dashboard URL:
+> e.g. `localhost:12345`. During the creation, you could see `Status` like `Job is idle`
+> or `Waiting for connection`. In case of error, the `Status` will show the
+> reason for the issue.
 >
 > **NOTE**: it is not necessary to click on `Dashboard URL`, because the link
 > is not directly available outside the Dask Lab Extension. To select a cluster,
