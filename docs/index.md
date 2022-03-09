@@ -1,7 +1,7 @@
 # A prototype for interactive analysis
 
 <p align="center">
-    <img src="/prototype.gif"></img>
+    <img src="/en/latest/prototype.gif"></img>
 </p>
 
 This project is a prototype for a data analysis system, CMS compliant. The main
