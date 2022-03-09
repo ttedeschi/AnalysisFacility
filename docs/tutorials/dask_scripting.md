@@ -14,9 +14,9 @@
  limitations under the License.
 -->
 
-# Use Dask from Python
+# :fontawesome-brands-python: Use Dask from Python
 
-## How to
+## :fontawesome-solid-circle-exclamation: How to
 
 It is possible to create a Dask Cluster using directly a Python script. To start,
 you have to import the proper class and create the related object. The following example
@@ -47,36 +47,40 @@ After that, you will have the Dask scheduler up and running. Now, you can scale 
 cluster.scale(1)
 ```
 
-> **NOTE**: the `scale` method will not wait for the workers to come up, thus, it is suggested to
-> scale immediately after the cluster starts and put some waits if necessary, to let the Batch
-> System provides for the resources:
->
-> ```python
-> cluster.scale(1)
-> sleep(60)
-> ```
->
-> **NOTE**: it could be possible that the cluster controller is not yet reachable when you
-> try to `scale` your cluster. In this situation you could receive an exception like the following:
->
-> ```python
-> /usr/local/[...]/dask_remote_jobqueue.py in scale(self, n)
->     594 
->     595         if not connected:
-> --> 596             raise Exception("Cluster is not reachable...")
->     597 
->     598         logger.debug("[Scheduler][scale][connection OK!]")
->
-> Exception: Cluster is not reachable...
-> ```
->
-> To fix this situation, just add a small sleep before the scale too, like follows:
->
-> ```python
-> sleep(6) # Wait a bit before the scale
-> cluster.scale(1)
-> sleep(60)
-> ```
+!!! attention
+
+    the `scale` method will not wait for the workers to come up, thus, it is suggested to
+    scale immediately after the cluster starts and put some waits if necessary, to let the Batch
+    System provides for the resources:
+
+    ```python
+    cluster.scale(1)
+    sleep(60)
+    ```
+
+!!! tip
+
+    it could be possible that the cluster controller is not yet reachable when you
+    try to `scale` your cluster. In this situation you could receive an exception like the following:
+
+    ```python
+    /usr/local/[...]/dask_remote_jobqueue.py in scale(self, n)
+        594 
+        595         if not connected:
+    --> 596             raise Exception("Cluster is not reachable...")
+        597 
+        598         logger.debug("[Scheduler][scale][connection OK!]")
+
+    Exception: Cluster is not reachable...
+    ```
+
+    To fix this situation, just add a small sleep before the scale too, like follows:
+
+    ```python
+    sleep(6) # Wait a bit before the scale
+    cluster.scale(1)
+    sleep(60)
+    ```
 
 Then, you can connect to the cluster with the Dask Client as follows:
 
@@ -94,8 +98,10 @@ client.close()
 cluster.close()
 ```
 
-> **NOTE**: the commands seen above can be used also in an interactive environment
-> such as `iPython`.
+!!! info
+
+    the commands seen above can be used also in an interactive environment
+    such as `iPython`.
 
 ## Script Example
 

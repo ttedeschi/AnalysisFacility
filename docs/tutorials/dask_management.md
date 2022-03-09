@@ -1,4 +1,5 @@
-## Scale
+# :handshake: Cluster management
+## :material-gauge: Scale
 
 All new clusters will have `0` workers, thus, you need to scale your Dask cluster
 to make a calculus. To scale the cluster, you can use the appropriate button:
@@ -10,7 +11,7 @@ the desired value and then press the `Scale` button.
 
 ![dask scale modal](imgs/dask_scale_modal.png)
 
-## Check resources
+## :material-notebook-check: Check resources
 
 After a scale, the resource availability of the cluster will be automatically updated.
 The information will be available in the cluster list, as shown in the following image:
@@ -29,14 +30,14 @@ with a situation similar to the following (where there are two workers):
 
 ![dask workers tab](imgs/dask_management_workers_tab.png)
 
-## Delete the cluster
+## :x: Delete the cluster
 
 To remove the cluster, simply click on the `Shutdown` button. The cluster and its
 workers will be deleted automatically.
 
 ![dask delete cluster](imgs/dask_delete_cluster.png)
 
-## Status from batch system
+## :material-view-dashboard: Status from batch system
 
 You can monitor the current job scheduling using the batch system calls. For example,
 using HTCondor queue management from a terminal in the JupyterLab:
@@ -55,7 +56,7 @@ the scheduler will adapt the number of workers.
 Moreover, when you shut down the cluster, all the jobs submitted should pass to the state
 completed.
 
-## Error handling
+## :material-hand-back-left: Error handling
 
 If you have a problem with the cluster, you can inspect some information to detect
 the source of the issue. The first resource available, if you started the cluster
@@ -77,7 +78,7 @@ vi /var/log/dask_labextension.log
 However, remember that some problems could be a consequence of a library you used
 wrong in the Dask flow, thus, check also how to proper use Dask: [10 minutes to dask](https://docs.dask.org/en/latest/10-minutes-to-dask.html#).
 
-## Recovery
+## :material-refresh: Recovery
 
 To get back to work, you can try to `Shutdown` the current cluster and re-create it from zero.
 Also, if you still have problem to remove the cluster and restart, use directly the Batch System commands:
@@ -94,7 +95,9 @@ it and update the list with the indicated button:
 
 ![dask update list](imgs/dask_update_llist.png)
 
-> **NOTE**: if you have issues like `the Dask Lab Extension service is not responding`, consider to restart
-> your Jupyter Lab instance.
+!!! tip
+
+    if you have issues like `the Dask Lab Extension service is not responding`, consider to restart
+    your Jupyter Lab instance.
 
 If you have problem to submit a job with the Batch System, consider to log out to refresh your credentials.

@@ -13,10 +13,11 @@
  See the License for the specific language governing permissions and
  limitations under the License.
 -->
-# Use Dask interactively as a backend
+# :material-chart-scatter-plot: Use Dask interactively as a backend
+
 Dask can be used as a backend for the distributed execution of ROOT's [RDataFrame](https://root.cern/doc/master/classROOT_1_1RDataFrame.html) computations. More specifically, ROOT RDataFrame supports distributed execution via the ```ROOT.RDF.Experimental.Distributed``` module.
 
-## Set up
+## :gear: Set up
 In a notebook, once a Dask client has been deployed and a Dask client instatiated:
 
 ```python

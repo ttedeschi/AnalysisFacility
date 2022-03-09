@@ -1,22 +1,7 @@
-<!--
- Copyright 2021 dciangot
- 
- Licensed under the Apache License, Version 2.0 (the "License");
- you may not use this file except in compliance with the License.
- You may obtain a copy of the License at
- 
-     http://www.apache.org/licenses/LICENSE-2.0
- 
- Unless required by applicable law or agreed to in writing, software
- distributed under the License is distributed on an "AS IS" BASIS,
- WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- See the License for the specific language governing permissions and
- limitations under the License.
--->
 
-# How to start
+# :rocket: How to start
 
-## Create a cluster
+## :gear: Create a cluster
 
 To create a Dask cluster from Jupyter Lab you have to use the Dask Lab Extension.
 You can find it on the left sidebar as shown in the figure:
@@ -41,21 +26,22 @@ the dashboard (blue square).
 
 ![dask cluster created](imgs/dask_init_created.png)
 
-> **NOTE**: in the `Status` field, you will see the actual state of the
-> cluster creation. The cluster will be ready when the state is `Running`.
-> In that situation, there will be a valid Scheduler address and Dashboard URL:
-> e.g. `localhost:12345`. During the creation, you could see `Status` like `Job is idle`
-> or `Waiting for connection`. In case of error, the `Status` will show the
-> reason for the issue.
->
-> **NOTE**: it is not necessary to click on `Dashboard URL`, because the link
-> is not directly available outside the Dask Lab Extension. To select a cluster,
-> you just have to move the cursor in the item and click when the cursor become a
-> hand.
+!!! info
 
-## Connect to the cluster
+    in the `Status` field, you will see the actual state of the
+    cluster creation. The cluster will be ready when the state is `Running`.
+    In that situation, there will be a valid Scheduler address and Dashboard URL:
+    e.g. `localhost:12345`. During the creation, you could see `Status` like `Job is idle`
+    or `Waiting for connection`. In case of error, the `Status` will show the
+    reason for the issue.
 
-## Connect to the cluster
+!!! attention
+
+    it is not necessary to click on `Dashboard URL`, because the link
+    is not directly available outside the Dask Lab Extension. To select a cluster,
+    you just have to move the cursor in the item and click when the cursor become a
+    hand.
+## :material-connection: Connect to the cluster
 
 Now, you can connect to the cluster using a `Dask Client`. Open your notebook,
 select the cell where you want to put the client connection code, and click
@@ -64,11 +50,13 @@ as shown in the following image with the green square:
 
 ![dask cluster connect](imgs/dask_client_code.png)
 
-> **NOTE**: you can also write that code copying the proper scheduler address
-> shown in the cluster `Scheduler Address`, for example:
-> 
-> ```python
-> from dask.distributed import Client
-> 
-> client = Client("localhost:12345")
-> ```
+!!! tip
+
+    you can also write that code copying the proper scheduler address
+    shown in the cluster `Scheduler Address`, for example:
+
+    ```python
+    from dask.distributed import Client
+
+    client = Client("localhost:12345")
+    ```
