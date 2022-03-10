@@ -15,16 +15,16 @@ In detail, the users can access either through the [JupyterHub portal](https://c
 JupyterLab instance where they can work or via command line as any well known batch system. The latter is implemented with HTCondor which is also responsible to harvest the resources, possibly geographically distributed. Moreover, in order to implement the interactivity, HTcondor is the responsible to allow Dask being distributed where the resources are actually available. [Dask](https://dask.org/) has the role to parallelize the actual user analysis, maximizing the usage of the hardware available in every node (all the cores). The software distribution (ROOT and any other library) is distributed via CVMFS. Finally, the data access is mediated by the [XRootD](https://xrootd.slac.stanford.edu/) service. The caching layer is foreseen in order to optimize the throughput, principally for all the distributed resources.
 At the moment there is no permanent storage available and the user is meant to use the grid storage for permanent/long term data archiving.
 
+<!--
 For what concern the interaction with CMS Data Management system ... <span style="color:red;font-size: large;font-weight: bold;">HERE DIEGO MUST PUT all what we can get from ESCAPE.</span>
+-->
 
-Finally, a key building blocks required for a user in order to be granted access to the system is the authentication (and authorization) that is based on JSON Web Tokens (JWT) issued by the [CMS instance of INDIGO-IAM at CERN](https://cms-auth.web.cern.ch/login). Additional details for accessing the system can be found [here](tutorials/dask_init.md)
+Finally, a key building blocks required for a user in order to be granted access to the system is the authentication (and authorization) that is based on JSON Web Tokens (JWT) issued by the [CMS instance of INDIGO-IAM at CERN](https://cms-auth.web.cern.ch/login). Additional details for accessing the system can be found [here](../../tutorials/reqs)
 
 All the central service, as well as the seed of local resources for quick development is manage with Kubernetes as detailed below. 
 
 ![Design schema](imgs/overview_schema_extended.png)
 ## Components
-
-<span style="color:red;font-size: large;font-weight: bold;">dettagliare bene cosa fa ogni singolo pezzo qui sotto DIEGO MIRCO</span>
 
 Summarizing all the resources and pieces needed to construct the described architecture,
 we have the following components:

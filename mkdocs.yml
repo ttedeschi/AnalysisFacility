@@ -16,7 +16,7 @@ nav:
       #- Network: "WIP.md"
       #- Data access: "WIP.md"
       #- Security: "WIP.md"
-      - Resources: "how_it_works/available_resources.md"
+      #- Resources: "how_it_works/available_resources.md"
   - Quick Start:
       - Requirements: "tutorials/reqs.md"
       - For users:
