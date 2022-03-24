@@ -18,7 +18,7 @@
 Dask can be used as a backend for the distributed execution of ROOT's [RDataFrame](https://root.cern/doc/master/classROOT_1_1RDataFrame.html) computations. More specifically, ROOT RDataFrame supports distributed execution via the ```ROOT.RDF.Experimental.Distributed``` module.
 
 ## :gear: Set up
-In a notebook, once a Dask client has been deployed and a Dask client instatiated:
+In a notebook, once a Dask client has been deployed and a Dask client instatiated as described [here](./dask_init), you can start with:
 
 ```python
 from dask.distributed import Client
@@ -26,7 +26,11 @@ from dask.distributed import Client
 client = Client(<Dask scheduler address)
 ```
 
-you need to declare a distributed DataFrame, passing all the necessary information
+> In alternative, you can drag and drop the Cluster block on the left panel into the notebook. That will create the cell above automatically with the correct values already compiled.
+
+## Using RDataframe
+
+If you want to use DASK to distribute RDataFrame payloads, you need now to declare a distributed DataFrame, passing all the necessary information
 
 ```python
 import ROOT
