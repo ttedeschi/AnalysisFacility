@@ -32,6 +32,10 @@ ssh <username>@cms-it-hub.cloud.cnaf.infn.it -p 32022
 
 ## Install dfleel CLI
 
+!!! attention
+
+  you do NOT need to install dfleet if you sit on a jlab instance! It is already installed by default.
+
 - Install via pip
 ```bash
 pip install git+https://github.com/comp-dev-cms-ita/dfleet
