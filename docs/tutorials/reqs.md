@@ -17,7 +17,7 @@
 ## Register your account in CMS-auth IAM
 
 - You will need to be registered in [cms-auth](https://cms-auth.web.cern.ch/) indicating as motivation: “INFN AF testing”
-  - If you are already register, please reachout on the dedicated [MM channel]()
+  - If you are already register, please reachout on the dedicated [MM channel](https://mattermost.web.cern.ch/infn-cloud-pg/channels/infn-analysis-facility)
 
 After that, you need to wait for a testbed administrator to insert you in the proper groups to get access.
 
