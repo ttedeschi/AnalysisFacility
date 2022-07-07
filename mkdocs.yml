@@ -25,9 +25,9 @@ nav:
               - Cluster management: "tutorials/dask_management.md"
               - Interactive analysis: "tutorials/dask_interactive.md"
               - Python script: "tutorials/dask_scripting.md"
-          #- Using HTCondor:
-          #    - Setting up the environment: "tutorials/htc_init.md"
-          #    - Submit your first job: "tutorials/htc_job.md"
+          - Using HTCondor:
+              - Setting up the environment: "tutorials/htc_init.md"
+              - Submit your first job: "tutorials/htc_job.md"
           - Data:
               - AAA Access: "tutorials/aaa_access.md"
           - Issues: "tutorials/issues.md"
