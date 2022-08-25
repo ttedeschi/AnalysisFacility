@@ -22,13 +22,7 @@ It is possible to create a Dask Cluster using directly a Python script.
 
 ## Requirements
 
-- go to [https://cms-it-hub.cloud.cnaf.infn.it/hub/token](https://cms-it-hub.cloud.cnaf.infn.it/hub/token) and get a token. Take note of it.
-
-- use the token as password to connect to your on-demand UI via:
-
-```bash
-ssh <username>@cms-it-hub.cloud.cnaf.infn.it -p 32022
-```
+Login into your UI following instructions [here](../ssh_access.md)
 
 ## Install dfleel CLI
 

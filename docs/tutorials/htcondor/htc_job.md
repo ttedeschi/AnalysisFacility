@@ -22,11 +22,11 @@
 
 From the [```gitlab.cern.ch``` container registry](https://gitlab.cern.ch/lenzip/LatinoAnalysis/container_registry/) copy the path of the relevant image.
 
-![imageselect](imgs/imageselect.png)
+![imageselect](..imgs/imageselect.png)
 
 Paste it in the Jupyter Hub startup page and wait for the server to start.
 
-![hub_privateimage](imgs/hub_privateimage.png)
+![hub_privateimage](../imgs/hub_privateimage.png)
 
 
 ## Job submission script (an example)

@@ -6,16 +6,16 @@
 To create a Dask cluster from Jupyter Lab you have to use the Dask Lab Extension.
 You can find it on the left sidebar as shown in the figure:
 
-![dask labextension](imgs/dask_init_labextension.png)
+![dask labextension](../imgs/dask_init_labextension.png)
 
 Then, you can click on the `NEW` button of the Dask Lab Extension:
 
-![dask new](imgs/dask_init_new.png)
+![dask new](../imgs/dask_init_new.png)
 
-You must select a proper factory name from the available list and, once selected,
+You must select a proper factory name and worker node image from the available list and, once selected,
 you can press the `Create` button:
 
-![dask select](imgs/dask_init_select.png)
+![dask select](../imgs/dask_init_select.png)
 
 After a couple of minutes, you will see the created cluster in the cluster list,
 indicated in the image by the red square. If you select that cluster, you will see
@@ -24,7 +24,7 @@ in the image. The Dask Lab Extension will select automatically for you the first
 cluster created, as a consequence, you should see also all the fields available in
 the dashboard (blue square).
 
-![dask cluster created](imgs/dask_init_created.png)
+![dask cluster created](../imgs/dask_init_created.png)
 
 !!! info
 
@@ -48,7 +48,7 @@ select the cell where you want to put the client connection code, and click
 the `Inject Code` button (red circle). Then, you will see the code in your cell,
 as shown in the following image with the green square:
 
-![dask cluster connect](imgs/dask_client_code.png)
+![dask cluster connect](../imgs/dask_client_code.png)
 
 !!! tip
 

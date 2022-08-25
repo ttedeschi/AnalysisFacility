@@ -19,18 +19,18 @@ nav:
       #- Resources: "how_it_works/available_resources.md"
   - Quick Start:
       - Requirements: "tutorials/reqs.md"
-      - For users:
-          - Using Dask:
-              - Initialization: "tutorials/dask_init.md"
-              - Cluster management: "tutorials/dask_management.md"
-              - Interactive analysis: "tutorials/dask_interactive.md"
-              - Python script: "tutorials/dask_scripting.md"
-          - Using HTCondor:
-              - Setting up the environment: "tutorials/htc_init.md"
-              - Submit your first job: "tutorials/htc_job.md"
-          - Data:
-              - AAA Access: "tutorials/aaa_access.md"
-          - Issues: "tutorials/issues.md"
+      - SSH access to UI: "tutorials/ssh_access.md"
+      - User-customized images: "tutorials/user_defined_image.md"
+      - Using Dask:
+          - Initialization: "tutorials/dask/dask_init.md"
+          - Cluster management: "tutorials/dask/dask_management.md"
+          - Interactive analysis: "tutorials/dask/dask_interactive.md"
+          - Python script: "tutorials/dask/dask_scripting.md"
+      - Using HTCondor:
+          - Setting up the environment: "tutorials/htcondor/htc_init.md"
+          - Submit your first job: "tutorials/htcondor/htc_job.md"
+      - AAA Access: "tutorials/aaa_access.md"
+      - Issues: "tutorials/issues.md"
   - DevOps guide:
       - General info: "dev/dev.md"
       #- Adding new users:
