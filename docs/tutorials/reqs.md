@@ -22,11 +22,3 @@
 After that, you need to wait for a testbed administrator to insert you in the proper groups to get access.
 
 Eventually you should be ready to login at [https://cms-it-hub.cloud.cnaf.infn.it](https://cms-it-hub.cloud.cnaf.infn.it), select the size of your notebook, and start following the quick-start tutorial
-
-## Quick-start tutorials
-
-- [Initialization](../dask_init)
-- [Cluster management](../dask_management)
-- [Interactive analysis](../dask_interactive)
-- [Python scripting](../dask_scripting)
-- [Data access]("../aaa_access)
