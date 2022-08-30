@@ -40,11 +40,11 @@ For the time being just know that you can instruct the job to pick an image that
 
 ```
 +SingularityImage = "/path/to/your/image/in/cvmfs/"
-Requirements   = (SiteName == "T3_IT_Perugia-test")
+Requirements   = (SiteName == "T2_LNL_PD")
 ```
 
 !!! Fixme
-     The second lime is there only for the time being, listing the only site that has all features implemented. But this is a test and will be propagated to other sites soon (July 4th 2022).
+     The second lime is there only for the time being, listing the only site that has all features implemented. But this is a test and will be propagated to other sites soon (August 30th 2022).
 
 And there is an advantage: **your image is a permanent snapshot of the exact code that you are going to use in your job**. This is very handy for version management.
 
