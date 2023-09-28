@@ -27,6 +27,7 @@ export IAM_CLIENT_SECRET=<copy from Jlab instance>
 then, run:
 ```
 git clone https://github.com/comp-dev-cms-ita/dask-remote-jobqueue.git -b standalone
+cd dask-remote-jobqueue
 pip install -e .
 ```
 and finally, run via Python:
@@ -44,3 +45,4 @@ cluster = RemoteHTCondor(
 )
 cluster.start()
 ```
+Info about the Dask scheduler will be prompted when it goes into running state, including the Dashboad URL: it can be accessed on the localhost of your docker container. 
