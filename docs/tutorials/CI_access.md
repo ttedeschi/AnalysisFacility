@@ -1,11 +1,11 @@
 In priciple an Analaysis Facility user would like to use the AF infrastructure for its CI/CD tests, or whatever the user needs to trigger from its own machine.
 In order to do this, it possible to access the HTCondor pool and even deploy and use a remote Dask Cluster on top of it without accessing the JupyterLab instance.
 First of all, you need to start at least from an image which contains HTCondor. For simplicity purposes, let's start from the AF JupyterLab image:
-```
+```bash
 docker run -ti ghcr.io/comp-dev-cms-ita/jupyterlab:v2.0.1-patch10-dask bash 
 ```
 once you are there, the setup of the htcondor pool needs:
-```
+```bash
 export _condor_SCHEDD_NAME=131.154.96.124.myip.cloud.infn.it
 export _condor_SCHEDD_HOST=131.154.96.124.myip.cloud.infn.it
 export _condor_COLLECTOR_HOST=131.154.96.124.myip.cloud.infn.it:30618
@@ -17,7 +17,7 @@ export _condor_TOOL_DEBUG=D_FULLDEBUG,D_SECURITY
 Once done this, the cluster should be accessible.
 
 If you need to deploy a Dask Cluster:
-```
+```bash
 export JUPYTERHUB_API_TOKEN=<copy from Jlab instance>
 export REFRESH_TOKEN=<copy from Jlab instance>
 export IAM_SERVER=https://cms-auth.web.cern.ch/
@@ -25,7 +25,7 @@ export IAM_CLIENT_ID=<copy from Jlab instance>
 export IAM_CLIENT_SECRET=<copy from Jlab instance>
 ```
 then, run:
-```
+```bash
 git clone https://github.com/comp-dev-cms-ita/dask-remote-jobqueue.git -b standalone
 cd dask-remote-jobqueue
 pip install -e .
