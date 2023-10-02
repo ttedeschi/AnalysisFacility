@@ -43,6 +43,9 @@ cluster = RemoteHTCondor(
         asynchronous = False,
         debug = False
 )
-cluster.start()
+cluster.start() #to start the cluster
+print(cluster.scheduler_info)
+ 
+cluster.close() #to remove the cluster
 ```
 Info about the Dask scheduler will be prompted when it goes into running state, including the Dashboad URL: it can be accessed on the localhost of your docker container. 
