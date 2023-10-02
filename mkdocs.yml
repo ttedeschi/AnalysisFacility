@@ -30,7 +30,7 @@ nav:
           - Setting up the environment: "tutorials/htcondor/htc_init.md"
           - Submit your first job: "tutorials/htcondor/htc_job.md"
       - AAA Access: "tutorials/aaa_access.md"
-      - Access from laptop: "tutorials/CI_access.md"
+      - Access from laptop/CI: "tutorials/CI_access.md"
       - Issues: "tutorials/issues.md"
   - DevOps guide:
       - General info: "dev/dev.md"
