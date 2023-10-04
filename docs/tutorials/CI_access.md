@@ -1,6 +1,6 @@
 # Access from laptop/CI
 
-In priciple an Analaysis Facility user would like to use the AF infrastructure for its CI/CD tests, or whatever the user needs to trigger from its own machine.
+In priciple an Analysis Facility user would like to use the AF infrastructure for its CI/CD tests, or whatever the user needs to trigger from its own machine.
 In order to do this, it possible to access the HTCondor pool and even deploy and use a remote Dask Cluster on top of it without accessing the JupyterLab instance.
 First of all, you need to start at least from an image which contains HTCondor. For simplicity purposes, let's start from the AF JupyterLab image:
 ```bash
