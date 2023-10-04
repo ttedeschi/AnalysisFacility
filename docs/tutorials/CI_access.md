@@ -17,7 +17,7 @@ export _condor_SEC_DEFAULT_AUTHENTICATION_METHODS=SCITOKENS
 export _condor_TOOL_DEBUG=D_FULLDEBUG,D_SECURITY
 ```
 Once done this, the cluster should be accessible.
-In the case you are using a service account (which means that in CMS IAM a dedicated client has been created, and the admin has given you respective IAM_CLIENT_ID and IAM_CLIENT_SECRET), you just need to run this bash snippet:
+In the case you are using a service account (which means that in CMS IAM a dedicated client has been created, and the admin has given you respective `IAM_CLIENT_ID` and `IAM_CLIENT_SECRET`), you just need to run this bash snippet:
 ```bash
 IAM_TOKEN_ENDPOINT=https://cms-auth.web.cern.ch/token
 result=$(curl -s -L \
