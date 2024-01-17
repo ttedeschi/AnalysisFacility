@@ -61,10 +61,17 @@ Discussions about possible strategies to build such facilities for analysis beco
 - Elastic Analysis Facility @ FNAL
 - SWAN @ CERN
 
+## List of publications
+- Tommaso Tedeschi, Vincenzo Eduardo Padulano, Daniele Spiga, Diego Ciangottini, Mirco Tracolli, Enric Tejedor Saavedra, Enrico Guiraud, Massimo Biasotto, _"Prototyping a ROOT-based distributed analysis workflow for HL-LHC: The CMS use case"_, Computer Physics Communications, Volume 295, 2024, 108965, ISSN 0010-4655, https://doi.org/10.1016/j.cpc.2023.108965.
+
 ## List of talks
 
  <span style="color:red;font-size: large;font-weight: bold;">add here all the presentation done. Perhaps list all the forum where this matter are discussed.</span>
 
+
+- [_"CMS Tier2 integration in INFN Analysis Facility"_](https://indico.cern.ch/event/1328197/#4-cms-tier2-integration-in-inf), CMS CAT General Meeting, 11-Oct-2023
+- [_"INFN Analysis Facility"_](https://indico.cern.ch/event/1274741/#15-infn-analysis-facility), CMS CAT General Meeting, 24-May-2023
+- [_"Benchmarking distributed-RDataFrame with CMS analysis workflows on the INFN analysis infrastructure"_](https://indico.jlab.org/event/459/contributions/11593/), CHEP 2023, 9-May-2023
 - _"INFN AF DEMO: The VBS analysis example"_, CMS Week, 26-Jan-2022
 - _"A prototype for interactive analysis at INFN"_, PPP Meeting, Nov-2021
 - _"A prototype for interactive analysis at INFN"_, CMS ATTF Meeting, Oct-2021
