@@ -1,5 +1,4 @@
 <h1 style="margin-bottom: 0px">Building a testbed<br>for an Analysis Facility at INFN</h1>
-<h5>a Prototype</h5>
 
 ## About
 
@@ -45,34 +44,24 @@ Last but not least, there is also a third aspect worth to be mentioned. Such a p
 
 ## Technological Background and possible synergies
 
-Most of the technology pillars of the project come from R&D developments made by INFN in several distinct initiatives developed during the past few years. To mention a few of them we have had [INDIGO-DataCloud](url), [EOSC-Hub](url), [ESCAPE](url) that provided us the foundations from cloud development to DataLake implementation and of course the solution for integrating data and compute. Resource integration experience gained with "PRACE access grant" has also a very important role because it gave us the concrete opportunity to test innovative solutions for accessing and using heterogeneous resource setups. A very significant aspect to highlight is that, all these developments are not experiment specific and thus the pillars are not tight to any specific computing model. There is a clear separation, at all levels, between experiment specific, possibly legacy, integration and the underlying system. This is a clear added-value.
+Most of the technology pillars of the project come from R&D developments made by INFN in several distinct initiatives developed during the past few years. To mention a few of them we have had [INDIGO-DataCloud](https://www.indigo-datacloud.eu/), [EOSC-Hub](https://www.eosc-hub.eu/), [ESCAPE](https://projectescape.eu/) that provided us the foundations from cloud development to DataLake implementation and of course the solution for integrating data and compute. Resource integration experience gained with "PRACE access grant" has also a very important role because it gave us the concrete opportunity to test innovative solutions for accessing and using heterogeneous resource setups. A very significant aspect to highlight is that, all these developments are not experiment specific and thus the pillars are not tight to any specific computing model. There is a clear separation, at all levels, between experiment specific, possibly legacy, integration and the underlying system. This is a clear added-value.
 
-Regarding the synergies there are plenty of opportunities, spanning from [INFN-Cloud](https://www.cloud.infn.it/) project to Multi-Experiment evaluation, passing through collaboration with initiatives for further integration of HPC and Cloud (i.e. the continuum) within ongoing initiatives with CINECA but also collaboration with analysis frameworks developers such as the current collaboration established with [ROOT RDF](url) team. 
+Regarding the synergies there are plenty of opportunities, spanning from [INFN-Cloud](https://www.cloud.infn.it/) project to Multi-Experiment evaluation, passing through collaboration with initiatives for further integration of HPC and Cloud (i.e. the continuum) within ongoing initiatives with CINECA but also collaboration with analysis frameworks developers such as the current collaboration established with [ROOT RDataFrame](https://root.cern/doc/master/classROOT_1_1RDataFrame.html) team. 
 Regarding the HPC it is about interactive data processing which thing become even more interesting when we start caring about integration ML based workflows.
 
-## State of the Art
-
-Discussions about possible strategies to build such facilities for analysis become nowadays a hot topic. Here we aim to provide a list of initiatives, within CMS Collaboration, ad different level of maturity, that are actively proposing and comparing solutions:
-
-- Coffea Casa @ UNL
-- AF @ MIT - Infrastructure
-- AF @ Purdue Status and Plans
-- AF at CIEMAT
-- Elastic Analysis Facility @ FNAL
-- SWAN @ CERN
-
 ## List of publications
-- Tommaso Tedeschi, Vincenzo Eduardo Padulano, Daniele Spiga, Diego Ciangottini, Mirco Tracolli, Enric Tejedor Saavedra, Enrico Guiraud, Massimo Biasotto, _"Prototyping a ROOT-based distributed analysis workflow for HL-LHC: The CMS use case"_, Computer Physics Communications, Volume 295, 2024, 108965, ISSN 0010-4655, https://doi.org/10.1016/j.cpc.2023.108965.
+
+- T. Tedeschi, V. Padulano, D. Spiga, D. Ciangottini, M. Tracolli, E. Saavedra, E. Guiraud, M. Biasotto, _"Prototyping a ROOT-based distributed analysis workflow for HL-LHC: The CMS use case"_, Computer Physics Communications, Volume 295, 2024, 108965, ISSN 0010-4655, https://doi.org/10.1016/j.cpc.2023.108965.
 
 ## List of talks
 
- <span style="color:red;font-size: large;font-weight: bold;">add here all the presentation done. Perhaps list all the forum where this matter are discussed.</span>
-
-
 - [_"CMS Tier2 integration in INFN Analysis Facility"_](https://indico.cern.ch/event/1328197/#4-cms-tier2-integration-in-inf), CMS CAT General Meeting, 11-Oct-2023
 - [_"INFN Analysis Facility"_](https://indico.cern.ch/event/1274741/#15-infn-analysis-facility), CMS CAT General Meeting, 24-May-2023
+- [_"Esperienza di un'analisi dati CMS nell'INFN "Analysis Facility" framework"_](https://agenda.infn.it/event/34683/contributions/197344/), Workshop sul Calcolo nell'INFN, 22-May-2023 
 - [_"Benchmarking distributed-RDataFrame with CMS analysis workflows on the INFN analysis infrastructure"_](https://indico.jlab.org/event/459/contributions/11593/), CHEP 2023, 9-May-2023
-- _"INFN AF DEMO: The VBS analysis example"_, CMS Week, 26-Jan-2022
-- _"A prototype for interactive analysis at INFN"_, PPP Meeting, Nov-2021
-- _"A prototype for interactive analysis at INFN"_, CMS ATTF Meeting, Oct-2021
-
+- [_"Benchmark di un nuovo modello di analisi per la fase-2 di CMS su risorse INFN"_](https://agenda.infn.it/event/34702/contributions/194166/), IFAE 2023, 13-Apr-2023
+- [_"Lessons learned converting a production-grade Python CMS analysis to distributed RDataFrame"_](https://indico.cern.ch/event/1150631/contributions/5002793/), PyHEP 2022, 13-Sep-2022
+- ["Esempio di analisi interattiva: RDF"](https://indico.cern.ch/event/1107463/contributions/4691518/), Workshop analisi dati @CMS Italia, 11-Mar-2022 
+- [_"INFN AF DEMO: The VBS analysis example"_](https://indico.cern.ch/event/1120508/#2-infn-af-demo), CMS Week, 26-Jan-2022
+- [_"A prototype for interactive analysis at INFN"_](https://indico.cern.ch/event/1095772/#1-a-prototype-for-interactive), PPP Meeting, 11-Nov-2021
+- [_"A prototype for interactive analysis at INFN"_](https://indico.cern.ch/event/1088170/#3-a-prototype-for-interactive), CMS ATTF Meeting, 26-Oct-2021
