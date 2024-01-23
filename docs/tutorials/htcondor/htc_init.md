@@ -22,17 +22,8 @@ At lxplus/lxbatch this is usually ensured leveraging ```afs```: the worker nodes
 
 **This workflow cannot be implemented as is in the AnalysisFacility**, but one that is similar, and possibly better when it comes to version management, is possible.
 
-##Shared Home
-
-A shared home is mounted on both the Jupyter Hub and on the worker nodes under ```/shared-home``` using [RClone](https://rclone.org/). It should be used to hold any user data that need to be accessed by the job at runtime, e.g. configuration files. 
-!!! Attention
-     The shared home has limitations with respect to ```afs```, e.g. *it is not possible to successfully create a CMSSW developer area*. 
-
-!!! Attention
-     The shared home is read-only on the worker nodes. 
-
 ##Distributing your code to the workder nodes
-If your job needs code and libraries, e.g. your analysis framework, to be available on the worker node (i.e. you need to achieve what you would probably do in lxplus by a simple ```cd``` in the relevant directory and a source of the environment, e.g. with ```cmsenv```), you can leverage ```docker```, ```singularity``` and ```cvmfs```. 
+If your job needs code and libraries, e.g. your analysis framework, and even small files, to be available on the worker node (i.e. you need to achieve what you would probably do in lxplus by a simple ```cd``` in the relevant directory and a source of the environment, e.g. with ```cmsenv```), you can leverage ```docker```, ```singularity``` and ```cvmfs```. 
 
 Scared :fearful:? Don't be. 
 
@@ -51,4 +42,3 @@ And there is an advantage: **your image is a permanent snapshot of the exact cod
 ## Creating an image of your code: the Latinos code example
 
 Please follow the instructions [here](../user_defined_image.md) to get started with using your own image.
-
