@@ -1,21 +1,9 @@
 # :material-database: AAA Access
 
-Data stored in the tiers of the WLCG (i.e. grid) can be accessed by using a specific redirector: `xrootd-cms.infn.it`.
-Once you know the logical path of your file, you only need to add `root://xrootd-cms.infn.it/` at the beginning to that path in order to copy it using the `xrdcp` command or using it as a data source for a RDataFrame:
-
-```python
-chain = [
-    'root://xrootd-cms.infn.it//store/user/dummy-user/dummy-folder/file1.root', 
-    'root://xrootd-cms.infn.it//store/user/dummy-user/dummy-folder/file2.root',
-
-]
-df = ROOT.RDataFrame(chain)
-```
-
 ## Reading files via proxy
-Moreover, files can also be read directly from a site using a proxy. In this case, further configuration is needed. 
+Files can be read directly from a WLCG site using a proxy. In this case, further configuration is needed. 
 If you want to read them from the JupyterLab instance, you only have to set these two environmental variables:
-```
+```bash
 export X509_USER_PROXY=<path_to_your_proxyfile>
 export X509_CERT_DIR=/cvmfs/grid.cern.ch/etc/grid-security/certificates/
 ```
