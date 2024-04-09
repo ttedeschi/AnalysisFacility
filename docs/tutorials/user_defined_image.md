@@ -8,7 +8,7 @@ This section describes the creation of a ```docker``` image with Latinos softwar
 
 ### Requirements
 
-The only requirement is that the image has to be derived from  ```ghcr.io/comp-dev-cms-ita/jupyterlab:AF20-alma9-v0.0.4```.
+The only requirement is that the image has to be derived from  ```ghcr.io/comp-dev-cms-ita/jupyterlab:AF20-alma9-v0.0.5```.
 
 ### Placing the software on gitlab to use CI/CD pipelines
 A CI/CD (Continuous Integration/Continuous Deployment) pipeline is a ```gitlab``` funtionality which allows defining a set of steps that need to be run following a commit or a merge request. We will use it to create the relevant ```docker``` image.
