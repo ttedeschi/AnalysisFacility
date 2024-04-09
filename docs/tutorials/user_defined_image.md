@@ -1,6 +1,6 @@
 # Creating an image with your code
 
-Here you will lear how to leverage your own image (libraries, code etc) to execute batch and interactive analyses.
+Here you will learn how to leverage your own image (libraries, code etc) to execute batch and interactive analyses.
 
 ## Example: Latinos framework
 
@@ -8,13 +8,13 @@ This section describes the creation of a ```docker``` image with Latinos softwar
 
 ### Requirements
 
-The only requirement is that the image has to be derived from  ```dciangot/jlab-rclone:v7```.
+The only requirement is that the image has to be derived from  ```ghcr.io/comp-dev-cms-ita/jupyterlab:AF20-alma9-v0.0.4```.
 
 ### Placing the software on gitlab to use CI/CD pipelines
 A CI/CD (Continuous Integration/Continuous Deployment) pipeline is a ```gitlab``` funtionality which allows defining a set of steps that need to be run following a commit or a merge request. We will use it to create the relevant ```docker``` image.
 As a first step the Latinos repository was cloned on [```gitlab.cern.ch```](https://gitlab.cern.ch/lenzip/LatinoAnalysis), to be able to use CI/CD pipelines. A few additions were necessary:
 
-   * a [```.gitlab-ci.yml```](https://gitlab.cern.ch/lenzip/LatinoAnalysis/-/blob/master/.gitlab-ci.yml) file instructing the creation of a pipeline to build the software. In essence, on every new commit, gitlab runs the pipeline, which, if succesful, results in the creation of a ```docker``` image of the latinos software stack. One of the most relevant lines of the pipeline configuration is the specification of the starting image, i.e. the one on top of which the software is built. In this case it was the already mentioned ```dciangot/jlab-rclone:v7```, so that the resulting image has the same functionalities of the original image, especially the capability to handle the Analysis Facility HTCondor cluster.
+   * a [```.gitlab-ci.yml```](https://gitlab.cern.ch/lenzip/LatinoAnalysis/-/blob/master/.gitlab-ci.yml) file instructing the creation of a pipeline to build the software. In essence, on every new commit, gitlab runs the pipeline, which, if succesful, results in the creation of a ```docker``` image of the latinos software stack. One of the most relevant lines of the pipeline configuration is the specification of the starting image, i.e. the one on top of which the software is built. In this case it was the already mentioned ```ghcr.io/comp-dev-cms-ita/jupyterlab:AF20-alma9-v0.0.4```, so that the resulting image has the same functionalities of the original image, especially the capability to handle the Analysis Facility HTCondor cluster.
    * a [```.gitlab/SetupDocker.sh```](https://gitlab.cern.ch/lenzip/LatinoAnalysis/-/blob/master/.gitlab/SetupDocker.sh) holding the instructions to build the software. In this case the software is built in a ```CMSSW_11_2_5``` developer area inside ```/opt```. The job on the worker node will need to ```cd /opt/CMSSW_11_2_5``` and issue ```cmsenv```.
 
 After every commit the pipeline is triggered and the ```docker``` image ends up [here](https://gitlab.cern.ch/lenzip/LatinoAnalysis/container_registry).
