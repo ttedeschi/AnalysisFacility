@@ -57,3 +57,6 @@ ROOT.RDF.Experimental.Distributed.initialize(my_initialization_function)
 
 now you are ready to book all the computations you need to do on the dataframe using RDataFrame methods.
 Once all the operations are booked, trigger the distributed execution by doing some actions on booked items, as you would do using RDataFrame locally. Results can be accessed in the same way as local RDataFrame, too.
+
+## Using Coffea
+TODO
