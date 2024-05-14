@@ -19,7 +19,7 @@
 ## On the Hub
 From the [```gitlab.cern.ch``` container registry](https://gitlab.cern.ch/lenzip/LatinoAnalysis/container_registry/) copy the path of the relevant image.
 
-![imageselect](..imgs/imageselect.png)
+![imageselect](../imgs/imageselect.png)
 
 Paste it in the Jupyter Hub startup page and wait for the server to start.
 
@@ -30,6 +30,8 @@ Paste it in the Jupyter Hub startup page and wait for the server to start.
 
 Please find here a complete submission script that was succesfully used on the testbed, based on the Latinos framework discussed earlier.
 ```
+Requirements = HasSingularity
+transfer_input_files    = proxy
 executable = ./mkShapes__ggH2018_v7_11_11__ALL/qqH_hww.1/mkShapes__ggH2018_v7_11_11__ALL__qqH_hww.1.sh
 universe = vanilla
 output = ./mkShapes__ggH2018_v7_11_11__ALL/qqH_hww.1/mkShapes__ggH2018_v7_11_11__ALL__qqH_hww.1.out
@@ -50,7 +52,7 @@ The exectutable script looks like this:
 ```bash
 #!/bin/bash
 export VO_CMS_SW_DIR=/cvmfs/cms.cern.ch
-export X509_USER_PROXY=/shared-home/plenzi/.proxy
+export X509_USER_PROXY=$PWD/proxy
 #voms-proxy-info
 export SCRAM_ARCH=slc7_amd64_gcc900
 export VO_CMS_SW_DIR=/cvmfs/cms.cern.ch
@@ -66,7 +68,7 @@ python ./mkShapes__ggH2018_v7_11_11__ALL/qqH_hww.1/mkShapes__ggH2018_v7_11_11__A
 
 Note that:
 
-   * The job points to the voms proxy in the ```/shared-home```
+   * The job points to the voms proxy that was transferred to the worker
    * Since the job lands in a ```singularity``` shell based on the ```docker``` image we have created, it does ```cd /opt/CMSSW_11_2_5``` and then ```cmsenv``` to source the environment.
 
 ## Output retrieval
