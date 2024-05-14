@@ -44,7 +44,7 @@ queue
 ```
 Note that:
 
-   * the singularity image that is loaded is the same one we used to start the server, except it is taken from ```/cvmfs```, instear of the ```github.cern.ch``` container registry directly.
+   * the singularity image that is loaded is the same one we used to start the server, except it is taken from ```/cvmfs```, instead of the ```gitlab.cern.ch``` container registry directly.
 
 
 The exectutable script looks like this:
