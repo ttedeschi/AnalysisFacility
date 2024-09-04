@@ -1,6 +1,8 @@
-[Access the CMS INFN Analysis Facility](https://cms-it-hub.cloud.cnaf.infn.it/){ .md-button }
-
 # A prototype for interactive analysis
+
+<p align="center">
+    <img src="/en/latest/prototype.gif"></img>
+</p>
 
 This project is a prototype for a data analysis system, CMS compliant. The main
 targets are:
@@ -19,3 +21,5 @@ The environment is composed using:
 
 At the moment, it supports scaling over [HTCondor](https://htcondor.org/) clusters using a custom
 [dask-jobqueue](http://jobqueue.dask.org/en/latest/) module.
+
+[Access the CMS INFN Analysis Facility](https://cms-it-hub.cloud.cnaf.infn.it/){ .md-button }
