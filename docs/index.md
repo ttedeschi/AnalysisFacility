@@ -1,10 +1,12 @@
-[Access the CMS INFN Analysis Facility](https://cms-it-hub.cloud.cnaf.infn.it/){ .md-button }
+
 
 # A prototype for interactive analysis
 
 <p align="center">
     <img src="/en/latest/prototype.gif"></img>
 </p>
+
+[Access the CMS INFN Analysis Facility](https://cms-it-hub.cloud.cnaf.infn.it/){ .md-button }
 
 This project is a prototype for a data analysis system, CMS compliant. The main
 targets are:
